@@ -5,6 +5,7 @@ alphabet = dict(zip("ABCDEFGHIJKLMNOPQRSTUVWXYZ",scramble_alph))
 cipher_alphabet2 = dict(zip(scramble_alph,"ABCDEFGHIJKLMNOPQRSTUVWXYZ"))
 
 plaintext = "this is a test"
+cipher_text = "SXWJ WJ I SAJS"
 
 def cipher(text, option='encipher'):
     lst = []
@@ -43,5 +44,5 @@ def cipher(text, option='encipher'):
 
         return lst3
 
-
 print (cipher(plaintext))
+print (cipher(cipher_text, option='decipher'))
